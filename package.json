@@ -1,27 +1,37 @@
 {
-  "name": "second-wave",
-  "version": "2.0.0",
-  "description": "I can do this",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/cwasar/second-wave.git"
-  },
-  "keywords": [
-    "fuck"
-  ],
-  "author": "Cwasar",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/cwasar/second-wave/issues"
-  },
-  "homepage": "https://github.com/cwasar/second-wave#readme",
-  "devDependencies": {
-    "webpack": "^5.45.1",
-    "webpack-cli": "^4.7.2",
-    "webpack-dev-server": "^3.11.2"
-  }
+	"name": "second-wave",
+	"version": "2.0.0",
+	"description": "I can do this",
+	"main": "index.js",
+	"scripts": {
+		"build": "webpack --mode production",
+		"dev": "webpack --mode development",
+		"start": "webpack server --mode development --open"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/cwasar/second-wave.git"
+	},
+	"keywords": [
+		"fuck"
+	],
+	"author": "Cwasar",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/cwasar/second-wave/issues"
+	},
+	"homepage": "https://github.com/cwasar/second-wave#readme",
+	"devDependencies": {
+		"@babel/cli": "^7.14.8",
+		"@babel/core": "^7.14.8",
+		"@babel/preset-env": "^7.14.8",
+		"babel-loader": "^8.2.2",
+		"html-webpack-plugin": "^5.3.2",
+		"webpack": "^5.45.1",
+		"webpack-cli": "^4.7.2",
+		"webpack-dev-server": "^3.11.2"
+	},
+	"dependencies": {
+		"@babel/polyfill": "^7.12.1"
+	}
 }
